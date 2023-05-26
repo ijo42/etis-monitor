@@ -1,0 +1,11 @@
+[Database]
+Path = sqlite:///./base.db
+
+[Telegram]
+access_token = xxxxx:AAAAA
+chat_id = 000
+
+[Params]
+delay_between_messages = 3600
+request_link = https://student.psu.ru/pls/stu_cus_et/stu.teach_plan
+log_file = logging.log
