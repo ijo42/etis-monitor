@@ -1,0 +1,8 @@
+services:
+  etis-monitor:
+    build:
+      context: .
+    volumes:
+      - "./config:/usr/src/app/config"
+      - "./logging.log:/usr/src/app/logging.log"
+      - "./base.db:/usr/src/app/base.db"

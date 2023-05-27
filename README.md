@@ -10,4 +10,8 @@
 6. Помочь проекту
 7. Запустить скрипт `python ./main.py`
 
+## Запуск под Docker (linux only):
+1. создать бд и лог-файл `touch logging.log base.db`
+2. docker compose up -d
+
 ##### tg channel: https://t.me/etis_monitor

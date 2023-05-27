@@ -14,7 +14,6 @@ from sqlalchemy.orm import mapper
 
 Base = sqlalchemy.orm.declarative_base()
 
-
 class Event(Base):
     __tablename__ = 'event'
     id = Column(Integer, primary_key=True)
@@ -42,8 +41,7 @@ class Database:
         engine = create_engine(obj, echo=False)
         Session = sqlalchemy.orm.sessionmaker(bind=engine)
         self.session = Session()
-        # init db method
-        # Base.metadata.create_all(engine)
+        Base.metadata.create_all(engine)
 
         self.last_event = None
 
